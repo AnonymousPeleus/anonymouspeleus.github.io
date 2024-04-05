@@ -36,7 +36,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title text-muted">
-            <span class="text-primary">߷</span>
+            <!-- <span class="text-primary">߷</span> -->
             <span class="text-dark">Inpaint GS 
             </span>
             <!-- </span>: Multiview <span class="text-dark">S</span>egmentation and <span class="text-dark">P</span>erceptual <span class="text-dark">In</span>painting with <span class="text-dark">Ne</span>ural <span class="text-dark">R</span>adiance <span class="text-dark">F</span>ields -->
@@ -118,7 +118,7 @@
         <div class="content has-text-justified">
           <img src="data/images/overview.png" style="float: right; margin-left:20px; margin-bottom: 10px" width="100%;" />
           <p class="content has-text-justified">
-            Neural Radiance Fields (NeRFs) have emerged as a popular approach for novel view synthesis. While NeRFs are quickly being adapted for a wider set of applications, intuitively editing NeRF scenes is still an open challenge. One important editing task is the removal of unwanted objects from a 3D scene, such that the replaced region is visually plausible and consistent with its context. We refer to this task as 3D inpainting. In 3D, solutions must be both consistent across multiple views and geometrically valid. In this paper, we  propose a novel 3D inpainting method that addresses these challenges. Given a small set of posed images and sparse annotations in a single input image, our framework first rapidly obtains a 3D segmentation mask for a target object. Using the mask, a perceptual optimization-based approach is then introduced that leverages learned 2D image inpainters, distilling their information into 3D space, while ensuring view consistency. We also address the lack of a diverse benchmark for evaluating 3D scene inpainting methods by introducing a dataset comprised of challenging real-world scenes. In particular, our dataset contains views of the same scene with and without a target object, enabling more principled benchmarking of the 3D inpainting task. We first demonstrate the superiority of our approach on multiview segmentation, comparing to NeRF-based methods and 2D segmentation approaches. We then evaluate on the task of 3D inpainting, establishing state-of-the-art performance against other NeRF manipulation algorithms, as well as a strong 2D image inpainter baseline.
+            <!-- Neural Radiance Fields (NeRFs) have emerged as a popular approach for novel view synthesis. While NeRFs are quickly being adapted for a wider set of applications, intuitively editing NeRF scenes is still an open challenge. One important editing task is the removal of unwanted objects from a 3D scene, such that the replaced region is visually plausible and consistent with its context. We refer to this task as 3D inpainting. In 3D, solutions must be both consistent across multiple views and geometrically valid. In this paper, we  propose a novel 3D inpainting method that addresses these challenges. Given a small set of posed images and sparse annotations in a single input image, our framework first rapidly obtains a 3D segmentation mask for a target object. Using the mask, a perceptual optimization-based approach is then introduced that leverages learned 2D image inpainters, distilling their information into 3D space, while ensuring view consistency. We also address the lack of a diverse benchmark for evaluating 3D scene inpainting methods by introducing a dataset comprised of challenging real-world scenes. In particular, our dataset contains views of the same scene with and without a target object, enabling more principled benchmarking of the 3D inpainting task. We first demonstrate the superiority of our approach on multiview segmentation, comparing to NeRF-based methods and 2D segmentation approaches. We then evaluate on the task of 3D inpainting, establishing state-of-the-art performance against other NeRF manipulation algorithms, as well as a strong 2D image inpainter baseline. -->
           </p>
         </div>
       </div>
@@ -129,8 +129,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/WEgJf1WC5SQ"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.youtube.com/embed/WEgJf1WC5SQ"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
@@ -150,7 +150,7 @@
         </br>
         <div class="content has-text-justified">
           <p>
-            An overview of our proposed inpainting pipeline. Using the posed input images and their corresponding masks (upper and lower left insets), we obtain (i) an initial NeRF with the target object present and (ii) the set of inpainted input RGB images with the target object removed (but with view inconsistencies). The initial NeRF (i) is used to compute depth values, which we inpaint to obtain depth images as geometric priors (upper-right inset). The inpainted RGB images (ii), which act as appearance priors, are used in conjunction with the depth priors, to fit a 3D consistent NeRF to the inpainted scene (lower-right inset).
+            An overview of our proposed inpainting pipeline.
           </p>
           </br>
         </div>
@@ -517,7 +517,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop has-text-centered shadow-sm">
     <br/>
-    <h2 class="title">Comparison to the Concurrent Work</h2>
+    <h2 class="title">Comparison to our Baselines</h2>
       <div class="row">
         <div class="col-3">
           <video poster="" autoplay muted loop height="100%" class="rounded" preload="none">
